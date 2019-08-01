@@ -1,10 +1,12 @@
 import React from 'react';
+import Index from './pages/Home/';
+import MainLayout from './layouts/Main/';
 
 const App: React.FC = () => {
   return (
-    <div>
-      dwq
-    </div>
+    <MainLayout>
+      <Index />
+    </MainLayout>
   );
 }
 
