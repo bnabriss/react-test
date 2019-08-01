@@ -1,0 +1,108 @@
+.section{
+  flex:1;
+  height: 200px;
+  padding-top: 128px;
+  @media screen and (max-width: 960px) {
+    padding-top: 45px;
+  }
+  .article{
+    padding: 0 280px 0 130px;
+    @media screen and (max-width: 1600px) {
+      padding: 0 130px 0 130px;
+    }
+    @media screen and (max-width: 960px) {
+      padding: 0 45px;
+    }
+    h1{
+      font-size: 43px;
+      color: #989898;
+      font-weight: lighter;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+  }
+  .section__form-controls{
+    display: flex;
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+  .section__form-controls--first{
+    flex: 4;
+    margin-right: 70px;
+    @media screen and (max-width: 1366px) {
+      flex: 2;
+    }
+    @media screen and (max-width: 960px) {
+      flex: 1;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  .section__form-controls--last{
+    flex: 1;
+    @media screen and (max-width: 960px) {
+      flex: 1;
+    }
+  }
+
+  .growth-area{
+    display: flex;
+    font-size: 19px;
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+    .growth-area__text{
+      // width: 227px;
+      flex: 1;
+      h1{
+        font-size: 46px;
+        font-weight: 100;
+        margin-bottom: 58px;
+        margin-top: 84px; 
+      }
+      b{
+        line-height: 36px;
+      }
+      span{
+        color: #989898;
+        font-weight: lighter;
+        line-height: 36px;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+    .growth-area__stats{
+      flex: 4 1;
+      
+      padding-top: 140px;
+      padding-left: 280px;
+      @media screen and (max-width: 1366px) {
+        padding-left: 80px;
+      }
+      @media screen and (max-width: 960px) {
+        flex: 1;
+        padding-top: 30px;
+        padding-left: 0px;
+      }
+    }
+    
+  }
+}
+
+.absolute-chart{
+  position: relative;
+  top: -410px;
+  z-index: -1;
+  @media screen and (max-width: 1600px) {
+    top: -210px;
+  }
+  @media screen and (max-width: 960px) {
+    top: 0;
+    overflow: hidden;
+  }
+  .apexcharts-xaxis{
+    display: none;
+  }
+}
+

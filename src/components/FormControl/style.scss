@@ -1,0 +1,83 @@
+
+
+.form-group{
+  position: relative;
+
+  label{
+    margin-left: 32px;
+    font-size: 12px;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+  
+  }
+  .form-control{
+    display: block;
+    height: 55px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    width: 100%;
+    border: none;
+    border-left: 6px solid #fff;
+    outline: none;
+    padding-left: 32px;
+    font-size: 15px;
+    padding-top: 12px;
+    font-weight: lighter;
+    border-radius: 3px;
+    transition: all .2s;
+    margin-top: -5px;
+    &:focus{
+      border-left: 6px solid #FF5A87;
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #707070;
+      opacity: 1; /* Firefox */
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #707070;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #707070;
+    }
+  }
+  button{
+    background: #ffffff00;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    transform: translate(50%, 21%);
+    bottom: 0;
+    cursor: pointer;
+
+    filter: drop-shadow(0 3px  6px rgba(0,0,0,.16));
+    &:hover{
+      filter: drop-shadow(0 3px  10px rgba(0,0,0,.16)); 
+    }
+    &:active{
+      filter: brightness(0.9) drop-shadow(0 3px  10px rgba(0,0,0,.16));
+
+    }
+  }
+  .form-group-icon{
+    position: absolute;
+    top: 58%;
+    right: 50px;
+  }
+  
+  &::after{
+    content: '';
+    display: block;
+    width: calc(100% - 70px);
+    height: 0px;
+    position: absolute;
+    right: 33px;
+    bottom: 9px;
+    border-top: 1px solid rgba(204,204,204,0.31);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16)
+
+  }
+
+}

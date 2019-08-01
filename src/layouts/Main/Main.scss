@@ -1,0 +1,61 @@
+.container{
+  display: flex;
+  @media screen and (max-width: 680px) {
+    display: block;
+  }
+}
+.aside{
+  // width: 23.6%;
+  min-width: 446px;
+  display: flex;
+  flex-flow: column;
+  @media screen and (max-width: 1600px) {
+    min-width: 260px;
+  }
+  .aside__links{
+    flex: 1;
+    transition: all .2s;
+    @media screen and (max-width: 680px) {
+      max-height: 0px;
+      overflow: hidden;
+    }
+    &.opened{
+      @media screen and (max-width: 680px) {
+        max-height: 400px;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+
+.aside-toggle{
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;  
+  display: none;
+  top: 90px;
+  left: 30px;
+  @media screen and (max-width: 680px) {
+    display: inline-block;
+  }
+}
+
+
+.unsername{
+  position: absolute;
+  top:28px;
+  right: 38px;
+  span{
+    text-shadow: 0 3px 6px #FFCA00;
+    font-size: 14px;
+  }
+  img{
+    display: inline-block;
+    width: 20px;
+    
+    margin-right: 6px
+  }
+}

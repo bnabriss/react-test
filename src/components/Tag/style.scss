@@ -1,0 +1,25 @@
+.tag{
+  background: #fff;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+  padding: 4px 8px;
+  border: 1px solid #A2D8F7;
+  border-radius: 3px;
+  margin: 8px 5px ;
+  color: #707070;
+  font-size: 11px;
+  position: relative;
+  .tag__icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50%);
+    top: 10px;
+    img{
+      filter: drop-shadow(0 3px  10px rgba(0,0,0,.16));
+    }
+  }
+  &.active{
+    color: #000000;
+  }
+}

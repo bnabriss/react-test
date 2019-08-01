@@ -1,0 +1,10 @@
+.aside__logo{
+  background: url('../../assets/logo.png');
+  background-repeat: no-repeat;
+  background-size: 204px 35px;
+  background-position: 34px 34px;
+  min-height: 150px;
+  @media screen and (max-width: 680px) {
+    background-size: 163px 28px;
+  }
+}

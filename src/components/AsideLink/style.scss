@@ -1,0 +1,27 @@
+.aside__link{
+  height: 80px;
+  line-height: 80px;
+  color: #707070;
+  text-decoration: none;
+  padding-left: 34px;
+  display: block;
+  box-shadow: 0 12px 15px rgba(0,0,0,0.08);
+  font-size: 14px;
+  font-weight: lighter;
+  background: white;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  transition: all .2s;
+  &.active{
+    font-size: 20px;
+    box-shadow: 0 12px 10px rgba(0,0,0,0.08), inset 6px 0 0 0 #FF5A87;
+    &:hover{
+      box-shadow: 0 12px 10px 6px rgba(0,0,0,0.08), inset 6px 0 0 0 #FF5A87;
+    }
+  }
+  &:hover{
+    box-shadow: 0 12px 15px 10px rgba(0,0,0,0.08);
+    color: #FF5A87
+  }
+  
+}
